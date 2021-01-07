@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Ülke Bilgileri </title>
+    <style>
+        #one,
+        #two {
+            margin: 10px;
+        }
+        
+        #map {
+            height: 500px;
+            width: 100px;
+            box-sizing: border-box;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav>
+            <h1>Ülkeler - Emre USTA</h1>
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="mainWrapper">
+            <div class="searchAndSelect">
+                <label class="searchCountry">
+          <input type="search" placeholder="Aramak İstediğiniz Ülke" tabindex="0"/>
+          <i class="fas fa-search"></i>
+        </label>
+
+                <select name="selectCont" class="continents">
+          <label>Kıta Filtresi</label>
+          <optgroup >
+            <option value="all">Tümü</option>
+            <option value="africa">Afrika</option>
+            <option value="americas">Amerika</option>
+            <option value="oceania">Avustralya</option>
+            <option value="asia">Asya</option>
+            <option value="europe">Avrupa</option>
+          </optgroup>
+        </select>
+            </div>
+            <div class="countries">
+            </div>
+        </div>
+        <div class="modal">
+            <label class="backButton">
+        <input type="button" class="btn" id="backBtn" value="Geri">
+        <i class="fas fa-long-arrow-alt-left"></i>
+      </label>
+
+        </div>
+    </main>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
